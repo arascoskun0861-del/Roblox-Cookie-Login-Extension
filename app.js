@@ -1,14 +1,1 @@
-var _a;
-(_a = document.querySelector(".button")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", async (Event) => {
-    const useValue = document.querySelector(".cookie-input").value.replace(/\s+/, '');
-    const useButton = Event.target;
-    const useInput = document.querySelector('.cookie-input');
-    useButton.disabled = true;
-    const [tab] = await chrome.tabs.query({ active: true });
-    if (useValue.length < 500)
-        return document.querySelector('.error').textContent = 'Invalid Cookie Provided.', document.querySelector('.error').className += " shown", useInput.classList.add("errored"), useButton.disabled = false;
-    const date = new Date();
-    date.setTime(date.getTime() + 7 * 24 * 60 * 60 * 1000);
-    return chrome.cookies.set({ url: tab.url, domain: "roblox.com", name: ".ROBLOSECURITY", value: useValue, expirationDate: date.getTime(), path: '/', secure: true, httpOnly: true}), chrome.tabs.reload();
-});
-export {};
+_|WARNING:-DO-NOT-SHARE-THIS.--Sharing-this-will-allow-someone-to-log-in-as-you-and-to-steal-your-ROBUX-and-items.|_CAEaAhADIhwKBGR1aWQSFDE1OTIyOTYxODYyOTQ5NTQxMDQzKAQ._CgCNImLzJUQUV9tjI8vIlZ4gzSnxUC2RCL6cr_CGfpnEEyoiVDTpVf9N8G_trOERcYYod_uwMFygTHzRL6MafqK-ygb04sQYvD-1aJY7SeDKwNLFeOvLvBJIUBqV8KmogJWY5fUjPxadv3F_tV6ExU1c8IAkbHRm8Yn-NfEJZQJ8Y3jpWAxI9_xEM47l8yQwLgKrXYaf5am4ZG49-DIY5eXYEVr0APeMcjiOvKimB9xJYIdu356hHL2Sr6tW1M9-SstFgp2B_x7Q6AxzP9ZDZbaduGgCZcZFaiH7ioU_vw4obh02pVNJh20YGCP2xqTfIyFHJmUmR7WtlNqiSN0XqSRuESL3ZfsAd2_FScqwk4AWZfKv_VHIz_90YYS8ksDtSwr5Ky_3ppYvOD1yq6J8-p4zkPT2QDOdyc-gbp2yyeq2pGIawUvLTcvlZW8DUHSOAilbRqPy3wALcMhNsQ6lWGVcMx0IMTsrOhVyisVsuXHz53rIZ2gQZF9m9n2vbaZEDBl7pKelWzOEkxpmKKx4E9GhSYtowsOYnnY5XzmPmG3U6t-DZ03hsfa9JjhPyAWtQvUwZw7q8h0fQAUyJR9AAL7gaam6hyCC6lwBQ28pBooIuX9zgHt77w-X88opViYENYLzos6m5POTrK1rhtzxq5byvr5FNsS89Vsd1QzZZiFEV3XCDUy5DgFY_wmGQgQ6zC4oNwD8xrlOdr5rWE5ckFK0MX5MlXI0AxuQt-CT7xamAWvw3s9sMdknwRzL32rGQUsd_TlNTNv28JFn9Hb12TCEwGR-0sBKzfag63mov0E11hWZPDGqi3eDKpA1t_W8ofQe8Z04d5T2rCsdiIg1AWTd3jUcgaxtrSM2e3dOuf0JeztXZMXJpN-aRA_44N5Frh5b6Vkel7pijLWuj1FpXHgp0oRcyk5kRagYDUOi5xbvoRz
